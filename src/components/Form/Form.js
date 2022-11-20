@@ -11,7 +11,7 @@ export function Form() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [id, setId] = useState('');
-  const contacts = useSelector(state => state.contactsSlice.contacts.items);
+  const contacts = useSelector(state => state.todos.contacts.items);
   const dispatch = useDispatch();
 
   const handleInputChange = e => {

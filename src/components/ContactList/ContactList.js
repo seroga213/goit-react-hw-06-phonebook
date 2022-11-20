@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux';
 import s from './ContactList.module.css';
 
 export const ContactList = () => {
-  const contacts = useSelector(state => state.contactsSlice.contacts.items);
+  const contacts = useSelector(state => state.todos.contacts.items);
   const filterValue = useSelector(
-    state => state.contactsSlice.contacts.filter.value
+    state => state.todos.contacts.filter.value
   );
 
   useEffect(() => {
